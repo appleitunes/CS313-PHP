@@ -1,5 +1,5 @@
 window.onload = () => {
-    sendData("This is a test.");
+    sendData("This is a test");
 };
 
 function sendData(data) {
