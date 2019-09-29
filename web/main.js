@@ -1,13 +1,11 @@
-window.onload = () => {
-    sendData("This is a test");
-};
-
-function sendData(data) {
+function sendData() {
+    let data = document.getElementById("user_input").value;
     let packagedData = data.split(" ").join("+");
     let url = `index.php/?q=${packagedData}`;
     readTextFile(url)
     .then((responseText) => {
-        document.getElementById("PHP").innerText = responseText;
+        document.getElementById("image_text").innerText = responseText;
+        document.getElementById("spongebob").style.visibility = "visible";
     });
 }
 
