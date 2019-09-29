@@ -25,7 +25,7 @@ function readTextFile(fileName) {
                     resolve(rawFile.responseText);
                 }
                 else {
-                    reject("Oops! Something went wrong.");
+                    reject(rawFile.responseText);
                 }
             }
         }
