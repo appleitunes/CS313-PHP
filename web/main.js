@@ -1,7 +1,7 @@
 window.onload = () => {
     readTextFile("index.php")
     .then((responseText) => {
-        alert(responseText);
+        document.getElementById("PHP").innerText = responseText;
     });
 };
 

@@ -46,3 +46,7 @@ button:hover {
     font-weight: bold;
     text-decoration: underline;
 }
+
+#PHP {
+    color: red;
+}
