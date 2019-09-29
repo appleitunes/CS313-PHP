@@ -1,9 +1,13 @@
 window.onload = () => {
-    readTextFile("index.php/test")
+    sendData("This is a test.");
+};
+
+function sendData(data) {
+    readTextFile(`index.php/%%${data.split(' ').join('&&')}`)
     .then((responseText) => {
         document.getElementById("PHP").innerText = responseText;
     });
-};
+}
 
 function readTextFile(fileName) {
     return new Promise((resolve, reject) => {
