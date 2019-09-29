@@ -3,11 +3,9 @@ window.onload = () => {
 };
 
 function sendData(data) {
-    let packagedData = data.split(" ").join("&&");
-    let url = "index.php/%%";
-    let fullUrl = url + packagedData;
-    alert(fullUrl);
-    readTextFile(fullUrl)
+    let packagedData = data.split(" ").join("+");
+    let url = `index.php/${packagedData}`;
+    readTextFile(url)
     .then((responseText) => {
         document.getElementById("PHP").innerText = responseText;
     });
