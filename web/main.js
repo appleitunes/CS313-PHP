@@ -1,5 +1,5 @@
 window.onload = () => {
-    readTextFile("index.php")
+    readTextFile("index.php/test")
     .then((responseText) => {
         document.getElementById("PHP").innerText = responseText;
     });
