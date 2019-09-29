@@ -1,6 +1,6 @@
 <?php
     $link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-    $rawData = explode("%%", $link)[1];
+    $rawData = explode("%%", $link);
     // $data = explode("&&", $rawData);
     echo $rawData;
 ?>
