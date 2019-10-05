@@ -1,0 +1,121 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    
+    width: 65%;
+    height: fit-content;
+    max-height: 90%;
+
+    margin: auto;
+}
+  
+.flex .grid {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+.flex .item {
+    border: 1px solid lightgray;
+    width: 20em;
+    height: 22em;
+    text-align: center;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.flex .item:hover {
+    transition: 0.25s;
+    background-color: lightgray;
+}
+
+.flex .item .confirm {
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.flex .item img {
+    width: 75%;
+    height: auto;
+}
+
+.flex .item .name {
+    font-size: 1.5em;
+}
+
+button {
+    margin: auto;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: 0.25s;
+    background-color: lightgray;
+}
+
+.container {
+    border: solid gray 1px;
+    padding: 1em;
+    border-radius: 1em;
+
+    height: fit-content;
+    width: 40%;
+
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.5em;
+
+    position: absolute;
+    left:0; right:0;
+    top:0; bottom:0;
+    margin: auto;
+}
+
+.container input[type=text] {
+    width: 25em;
+    padding: 0.5em;
+    border-radius: 1em;
+    float: right;
+}
+
+.container button {
+    margin: auto;
+    border-radius: 1em;
+    cursor: pointer;
+    font-size: 1.25em;
+}
+
+.container button:hover {
+    transition: 0.25s;
+    background-color: lightgray;
+}
+
+.container2 {
+    padding: 1em;
+    border-radius: 1em;
+
+    height: fit-content;
+    width: 40%;
+
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.5em;
+    
+    margin: auto;
+}
+
+.container2 button {
+    margin: auto;
+    border-radius: 1em;
+    cursor: pointer;
+    font-size: 1.25em;
+}
+
+.container2 button:hover {
+    transition: 0.25s;
+    background-color: lightgray;
+}
