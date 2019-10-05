@@ -6,10 +6,10 @@
         <meta charset="UTF-8"/>
         <title>Cart</title>
         <link rel="stylesheet" href="Css/checkout.css">
-        <link rel="icon" type="image/png" href="Images/pokeball.jpeg">
+        <link rel="icon" type="image/png" href="Images/pokeball.png">
     </head>
     <body>
-        <h1 style="text-align:center;">Pokémon Center</h1>
+        <h1 style="text-align:center;">PokéMart</h1>
         <hr><br>
         <div class="container">
             <a href="browse.php" id="check-out">
