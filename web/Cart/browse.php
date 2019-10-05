@@ -6,6 +6,7 @@
         <meta charset="UTF-8"/>
         <title>Browse</title>
         <link rel="stylesheet" href="Css/checkout.css">
+        <link rel="icon" type="image/png" href="Images/pokeball.jpg">
     </head>
     <body>
         <h1 style="text-align:center;">Pokémon Center</h1>
