@@ -6,7 +6,7 @@
         <meta charset="UTF-8"/>
         <title>Confirmation</title>
         <link rel="stylesheet" href="Css/checkout.css">
-        <link rel="icon" type="image/png" href="Images/pokeball.jpg">
+        <link rel="icon" type="image/png" href="Images/pokeball.jpeg">
     </head>
     <body> 
         <h1 style="text-align:center;">Pokémon Center</h1>
