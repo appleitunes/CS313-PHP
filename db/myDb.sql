@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS List, Story;
+
 CREATE TABLE List (
     list_id         SERIAL      PRIMARY KEY
 ,   story_id        SERIAL      REFERENCES Story(story_id)
