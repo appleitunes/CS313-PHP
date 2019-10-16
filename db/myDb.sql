@@ -13,3 +13,4 @@ CREATE TABLE Story (
 ,   story           VARCHAR(4096)
 ,   created_date    TIMESTAMP           DEFAULT NOW()    
 );
+
