@@ -14,10 +14,12 @@
 
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        echo "Hello";
+        echo "You're excused.";
     }
     catch (PDOException $ex) {
         echo 'Error!: ' . $ex->getMessage();
         die();
+
+        echo "You done messed up Aaron!";
     }
 ?>
