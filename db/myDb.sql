@@ -14,3 +14,14 @@ CREATE TABLE Story (
 ,   created_date    TIMESTAMP           DEFAULT NOW()    
 );
 
+CREATE TABLE scripture (
+  id SERIAL PRIMARY KEY NOT NULL,
+  book VARCHAR(80) NOT NULL,
+  chapter INT NOT NULL,
+  verse INT NOT NULL,
+  content VARCHAR(4000) NOT NULL
+  );
+
+# Insert data into the new table
+INSERT INTO scripture (book, chapter, verse, content)
+  VALUES ('John', 1, 5, 'And the light shineth in darkness; and the darkness comprehended it not.');
