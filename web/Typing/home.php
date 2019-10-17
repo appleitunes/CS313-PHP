@@ -11,7 +11,7 @@
     <body>
         <h1>Scripture Resources</h1>
         <?php
-            foreach ($db->query('SELECT * author, story, numRatings, totalRating FROM stories ORDER BY time DESC;') as $row) {
+            foreach ($db->query('SELECT author, story, numRatings, totalRating FROM stories ORDER BY time DESC;') as $row) {
                 $author = $row['author'];
                 $story = $row['story'];
                 $numRatings = $row['numRatings'];
