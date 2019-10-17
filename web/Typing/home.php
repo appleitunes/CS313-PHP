@@ -9,7 +9,7 @@
         <title>Scriptures</title>
     </head>
     <body>
-        <h1>Stories</h1>
+        <h1>This is a test</h1>
         <?php
             $storyID = null;
 
@@ -26,7 +26,7 @@
                 $rating = $row["rating"];
                 $comment = $row["comment"];
 
-                echo "$comment";
+                echo "$comment<br>";
             }
         ?>
     </body>
