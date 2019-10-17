@@ -15,9 +15,9 @@
                 $author = $row['author'];
                 $story = $row['story'];
                 $numRatings = $row['numRatings'];
-                $rating = $numRatings == 0 ? 0 : $row['totalRating'] / $row['numRatings'];
+                $total = $row['totalRating'];
 
-                echo "$author - $story<br>$rating<br><br>";
+                echo "$author - $story<br>$numRatings + $total<br><br>";
             }
         ?>
     </body>

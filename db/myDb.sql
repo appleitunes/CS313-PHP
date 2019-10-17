@@ -39,6 +39,6 @@ VALUES
     3,
     14,
     'Adam the Volleyball Champion',
-    'This is a test. Nothing to see here.',
+    'Hello, World.',
     'Adam Chlarson'
 );
