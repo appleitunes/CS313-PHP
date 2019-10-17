@@ -1,4 +1,5 @@
 -- heroku pg:psql
+-- \i db/myDb.sql
 
 DROP TABLE IF EXISTS Stories, Reviews;
 

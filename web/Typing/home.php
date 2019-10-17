@@ -23,7 +23,8 @@
             }
 
             foreach ($db->query("SELECT rating, comment FROM Reviews r WHERE r.story_id = '$storyID'") as $row) {
-                $comment = $row['comment'];
+                $rating = $row["rating"];
+                $comment = $row["comment"];
 
                 echo "$comment";
             }
