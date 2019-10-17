@@ -9,7 +9,7 @@
         <title>Scriptures</title>
     </head>
     <body>
-        <h1>Scripture Resources</h1>
+        <h1>Stories</h1>
         <?php
             $storyID = null;
 
