@@ -11,13 +11,21 @@
     <body>
         <h1>Scripture Resources</h1>
         <?php
-            foreach ($db->query('SELECT author, story, numRatings, totalRating FROM stories;') as $row) {
+            $storyID = null;
+
+            foreach ($db->query('SELECT story_id, author, story FROM stories;') as $row) {
+                $storyID = $row['story_id'];
                 $author = $row['author'];
                 $story = $row['story'];
-                $numRatings = $row['numRatings'];
-                $total = $row['totalRating'];
 
-                echo "$author - $story<br>$numRatings + $total<br><br>";
+                echo "<strong>$author</strong>";
+                echo "<br>$story";
+            }
+
+            foreach ($db->query("SELECT rating, comment FROM Reviews r WHERE r.story_id = '$storyID'") as $row) {
+                $comment = $row['comment'];
+
+                echo "$comment";
             }
         ?>
     </body>
