@@ -1,6 +1,4 @@
-<?php
-    require "../../db/dbConnect.php";
-?>
+<?php require "../../db/dbConnect.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,11 +11,12 @@
     <body>
         <h1>Scripture Resources</h1>
         <?php
-            foreach ($db->query('SELECT author, story FROM stories;') as $row) {
+            foreach ($db->query('SELECT author, story, created_date FROM stories;') as $row) {
                 $author = $row['author'];
                 $story = $row['story'];
+                $date = $row['created_date'];
 
-                echo "$author - $story";
+                echo "$author - $story<br>$date<br><br>";
             }
         ?>
     </body>
