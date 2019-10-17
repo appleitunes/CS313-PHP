@@ -1,6 +1,6 @@
-<?php 
+<!-- <?php 
 require 'db-connect.php';
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,16 +12,5 @@ require 'db-connect.php';
     </head>
     <body>
         <h1>Scripture Resources</h1>
-        <?php
-            foreach ($db->query('SELECT book, chapter, verse, content FROM scriptures;') as $row) {
-                $book = $row['book'];
-                $chapter = $row['chapter'];
-                $verse = $row['verse'];
-                $content = $row['content'];
-                echo "<b>$book $chapter:$verse</b> - \"$content\"";
-                echo "<br/>";
-                echo "<br/>";
-            }
-        ?>
     </body>
 </html>
