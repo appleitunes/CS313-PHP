@@ -9,7 +9,6 @@ CREATE TABLE Stories (
 ,   title           VARCHAR(255)        NOT NULL
 ,   story           VARCHAR(4096)       NOT NULL
 ,   author          VARCHAR(64)         NOT NULL
-,   created_date    TIMESTAMP           DEFAULT NOW()    
 );
 
 INSERT INTO STORIES (
@@ -26,4 +25,20 @@ VALUES
     'An Alien Encounter',
     'This is a test. Nothing to see here.',
     'Shane Davenport'
+);
+
+INSERT INTO STORIES (
+    numRatings,
+    totalRating,
+    title,
+    story,
+    author
+)
+VALUES
+(
+    3,
+    14,
+    'Adam the Volleyball Champion',
+    'This is a test. Nothing to see here.',
+    'Adam Chlarson'
 );

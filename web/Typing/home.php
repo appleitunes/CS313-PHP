@@ -11,12 +11,13 @@
     <body>
         <h1>Scripture Resources</h1>
         <?php
-            foreach ($db->query('SELECT author, story, created_date FROM stories;') as $row) {
+            foreach ($db->query('SELECT * author, story, numRatings, totalRating FROM stories ORDER BY time DESC;') as $row) {
                 $author = $row['author'];
                 $story = $row['story'];
-                $date = $row['created_date'];
+                $numRatings = $row['numRatings'];
+                $rating = $numRatings == 0 ? 0 : $row['totalRating'] / $row['numRatings'];
 
-                echo "$author - $story<br>$date<br><br>";
+                echo "$author - $story<br>$rating<br><br>";
             }
         ?>
     </body>
