@@ -13,7 +13,7 @@
     <body>
         <h1>Scripture Resources</h1>
         <?php
-            foreach ($db->query('SELECT book, chapter, verse, content FROM scriptures;') as $row) {
+            foreach ($db->query('SELECT author, story FROM stories;') as $row) {
                 $author = $row['author'];
                 $story = $row['story'];
 
