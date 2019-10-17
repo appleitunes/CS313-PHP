@@ -1,5 +1,5 @@
 <?php
-    require "dbConnect.php";
+    require "../../db/dbConnect.php";
 ?>
 
 <!DOCTYPE html>
