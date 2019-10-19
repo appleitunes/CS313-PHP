@@ -6,6 +6,7 @@ window.onload = () => {
         document.getElementById("dark").style.display = "none";
         document.body.style.height = "auto";
         document.body.style.overflow = "scroll";
+        document.getElementById("comment_area").value = "";
     };
 
     // Index all objects by ID

@@ -48,3 +48,7 @@
     height: 100%;
     float: right;
 }
+
+#comment_container button:hover {
+    color: lightgray;
+}

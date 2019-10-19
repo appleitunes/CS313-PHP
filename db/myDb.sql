@@ -24,7 +24,7 @@ INSERT INTO STORIES (
 VALUES
 (
     'An Alien Encounter',
-    'This is a test. Nothing to see here.',
+    'There I was, on the top of Mount Everest, looking down at an alien spaceship I found.',
     'Shane Davenport'
 );
 
