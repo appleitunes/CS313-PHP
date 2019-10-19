@@ -176,4 +176,34 @@ function display(id) {
     document.getElementById("dark").style.display = "block";
     document.body.style.height = "100%";
     document.body.style.overflow = "hidden";
+
+    let url = "https://gentle-meadow-extreme.herokuapp.com/Typing/loadStory.php/" + id;
+    readFile(url)
+    .then((response) => {
+        alert(response);
+    });
+}
+
+/**
+ * Gather data from 
+ */
+function readFile(id) {
+    return new Promise((resolve, reject) => {
+        let rawFile = new XMLHttpRequest();
+
+        rawFile.open("GET", fileName, true);
+
+        rawFile.onreadystatechange = () => {
+            if (rawFile.readyState === 4) {
+                if (rawFile.status === 200 || rawFile.status == 0) {
+                    resolve(rawFile.responseText);
+                }
+                else {
+                    reject("Oops! Something went wrong.");
+                }
+            }
+        }
+
+        rawFile.send(null);
+    });
 }

@@ -56,8 +56,8 @@
                             $author = $row['author'];
 
                             echo "<div class='story' onclick=\"display('$id')\">";
-                            echo "<span class='title'>$title</span>";
-                            echo "<span class='author'>$author</span>";
+                            echo "<div class='title'>$title</div>";
+                            echo "<div class='author'>$author</div>";
                             echo "<br>";
                             echo "<div class='preview'>$story</div>";
                             echo "</div>";
