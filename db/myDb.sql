@@ -10,9 +10,8 @@ CREATE TABLE Stories (
 ,   author          VARCHAR(64)         NOT NULL
 );
 
-CREATE TABLE Reviews (
-    review_id       SERIAL              PRIMARY KEY
-,   rating          INTEGER             NOT NULL
+CREATE TABLE Comment (
+    comment_id      SERIAL              PRIMARY KEY
 ,   comment         VARCHAR(255)        NOT NULL
 ,   story_id        SERIAL              REFERENCES Stories (story_id)
 );
@@ -43,14 +42,12 @@ VALUES
     'Adam Chlarson'
 );
 
-INSERT INTO reviews (
-    rating,
+INSERT INTO comment (
     comment,
     story_id
 )
 VALUES
 (
-    4,
     'This is trash',
     5
 );

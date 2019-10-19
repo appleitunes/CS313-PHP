@@ -23,6 +23,8 @@
                 <h1 id="popup_title"></h1>
                 <p id="popup_author"></p>
                 <p id="popup_story"></p>
+                <textarea></textarea>
+                <button></button>
                 <hr>
                 <div id="popup_reviews"></div>
             </div>
