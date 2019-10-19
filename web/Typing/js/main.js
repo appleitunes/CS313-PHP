@@ -174,13 +174,12 @@ function finish() {
  */
 function display(id) {
     document.getElementById("dark").style.display = "block";
-    
-    let element = document.getElementById("story" + id);
-    let story = element.getElementsByClassName("preview").innerHTML;
-    alert(story);
-
     document.body.style.height = "100%";
     document.body.style.overflow = "hidden";
+    
+    let element = document.getElementById("story" + id);
+    let story = element.getElementsByClassName("preview")[0].innerHTML;
+    alert(story);
 
     let url = "loadStory.php/?q=" + id;
     readFile(url)
