@@ -50,5 +50,11 @@
 }
 
 #comment_container button:hover {
-    color: lightgray;
+    background-color: lightgray;
+}
+
+#popup_story {
+    width: 50%;
+    overflow: hidden;
+    height: 100%;
 }

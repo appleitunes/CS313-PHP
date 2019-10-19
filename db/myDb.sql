@@ -1,7 +1,7 @@
 -- heroku pg:psql
 -- \i db/myDb.sql
 
-DROP TABLE IF EXISTS Stories, Reviews;
+DROP TABLE IF EXISTS Stories, Comment;
 
 CREATE TABLE Stories (
     story_id        SERIAL              PRIMARY KEY
