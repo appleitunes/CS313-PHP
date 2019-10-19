@@ -32,6 +32,9 @@
 #popup textarea {
     width: 60%;
     float: left;
+    resize: none;
+    border-radius: 1em;
+    padding: 0.5em;
 }
 
 #popup button {
