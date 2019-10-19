@@ -41,6 +41,7 @@
     resize: none;
     border-radius: 1em;
     font-size: 1.25em;
+    padding: 0.5em;
 }
 
 #comment_container button {
