@@ -8,7 +8,7 @@
         foreach ($db->query("SELECT comment FROM Comment c WHERE c.story_id = '$id'") as $row) {
             $comment = $row["comment"];
 
-            echo "$comment<br>";
+            echo "- $comment<br>";
         }
     }
     catch (Exception $e) {
