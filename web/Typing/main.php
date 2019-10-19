@@ -24,7 +24,7 @@
                 <p id="popup_author"></p>
                 <p id="popup_story"></p>
                 <textarea></textarea>
-                <button>Submit Comment</button>
+                <button>Post</button>
                 <hr>
                 <div id="popup_reviews"></div>
             </div>

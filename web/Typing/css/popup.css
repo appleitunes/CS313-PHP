@@ -29,7 +29,13 @@
     padding: 1em;
 }
 
+#popup textarea {
+    width: 60%;
+    float: left;
+}
+
 #popup button {
-    width: 5em;
+    width: 30%;
     height: 2em;
+    float: right;
 }
