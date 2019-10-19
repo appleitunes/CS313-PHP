@@ -187,7 +187,7 @@ function display(id) {
 /**
  * Gather data from 
  */
-function readFile(id) {
+function readFile(fileName) {
     return new Promise((resolve, reject) => {
         let rawFile = new XMLHttpRequest();
 
