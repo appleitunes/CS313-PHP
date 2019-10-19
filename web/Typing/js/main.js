@@ -177,7 +177,7 @@ function display(id) {
     document.body.style.height = "100%";
     document.body.style.overflow = "hidden";
 
-    let url = "loadStory.php/" + id;
+    let url = "loadStory.php/?q=" + id;
     readFile(url)
     .then((response) => {
         alert(response);
