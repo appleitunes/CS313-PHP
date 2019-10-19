@@ -7,7 +7,6 @@
     right: 0;
     border-top: gray solid 1px;
     padding: 1em;
-    overflow: hidden;
 }
 
 .story {
@@ -33,9 +32,10 @@
 }
 
 .story .preview {
+    text-align: left;
     float: left;
     width: 50%;
     overflow: hidden;
-    height: 50%;
+    height: 25%;
     border: solid;
 }
