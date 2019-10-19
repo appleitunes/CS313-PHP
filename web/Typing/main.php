@@ -59,7 +59,8 @@
                             echo "<div class='title'>$title</div>";
                             echo "<br>";
                             echo "<div class='preview'>$story</div>";
-                            echo "<div>";
+                            echo "</div>";
+                            echo "<br>";
                         }
                     ?>
 
