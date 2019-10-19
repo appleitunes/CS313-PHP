@@ -33,4 +33,7 @@
 
 .story .preview {
     float: left;
+    width: 50%;
+    overflow: hidden;
+    height: 100%;
 }
