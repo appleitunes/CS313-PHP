@@ -24,10 +24,12 @@
                 <p id="popup_author"></p>
                 <p id="popup_story"></p>
                 <hr>
-                <textarea></textarea>
-                <button>Post</button>
+                <div id="comment_container">
+                    <textarea></textarea>
+                    <button>Post</button>
+                </div>
                 <hr>
-                <div id="popup_reviews"></div>
+                <div id="popup_comments"></div>
             </div>
         </div>
 
