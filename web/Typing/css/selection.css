@@ -27,14 +27,10 @@
     font-weight: bold;
 }
 
-.story .rating {
+.story .author {
     float: right;
 }
 
 .story .preview {
     float: left;
-}
-
-.story .review_count {
-    float: right;
-}
+}=

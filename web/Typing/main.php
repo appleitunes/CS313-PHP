@@ -57,28 +57,13 @@
 
                             echo "<div class='story' onclick=\"display('$id')\">";
                             echo "<div class='title'>$title</div>";
+                            echo "<div class='author'>$author</div>";
                             echo "<br>";
                             echo "<div class='preview'>$story</div>";
                             echo "</div>";
                             echo "<br>";
                         }
                     ?>
-
-                    <!-- <div class="story" onclick="display('id')">
-                        <div class="title">Test</div>
-                        <div class="rating">5/5 stars</div>
-                        <br>
-                        <div class="preview">This is a test.</div>
-                        <div class="review_count">5 reviews</div>
-                    </div>
-                    <br>
-                    <div class="story" onclick="display('id')">
-                        <div class="title">Test</div>
-                        <div class="rating">5/5 stars</div>
-                        <br>
-                        <div class="preview">This is a test.</div>
-                        <div class="review_count">5 reviews</div>
-                    </div> -->
                 </div>
             </div>
 
