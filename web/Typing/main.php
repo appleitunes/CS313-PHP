@@ -20,7 +20,7 @@
         <div id="dark">
             <div id="popup">
                 <img src="images/cancel.png" id="cancel">
-                <h1>Story Title</h1>
+                <h1 id="title">Story Title</h1>
                 <p>This is the story.</p>
                 <hr>
                 <p>145 reviews</p>
@@ -55,7 +55,7 @@
                             $story = $row['story'];
                             $author = $row['author'];
 
-                            echo "<div class='story' onclick=\"display('$id')\">";
+                            echo "<div class='story' id='story$id' onclick=\"display('$id')\">";
                             echo "<div class='title'>$title</div>";
                             echo "<div class='author'>$author</div>";
                             echo "<br>";
