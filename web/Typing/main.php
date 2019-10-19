@@ -24,10 +24,7 @@
                 <p id="popup_author"></p>
                 <p id="popup_story"></p>
                 <hr>
-                <p>145 reviews</p>
-                <div id="reviews">
-                    
-                </div>
+                <div id="popup_reviews"></div>
             </div>
         </div>
 
