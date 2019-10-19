@@ -16,6 +16,7 @@
     border-radius: 1em;
     max-width: 30em;
     margin: 0 auto;
+    height: 10em;
 }
 
 .story:hover {
