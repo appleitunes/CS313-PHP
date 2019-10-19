@@ -20,8 +20,8 @@
         <div id="dark">
             <div id="popup">
                 <img src="images/cancel.png" id="cancel">
-                <h1 id="title">Story Title</h1>
-                <p>This is the story.</p>
+                <h1 id="popup_title">Story Title</h1>
+                <p id="popup_story">This is the story.</p>
                 <hr>
                 <p>145 reviews</p>
                 <div id="reviews">

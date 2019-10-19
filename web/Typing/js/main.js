@@ -178,8 +178,8 @@ function display(id) {
     document.body.style.overflow = "hidden";
     
     let element = document.getElementById("story" + id);
-    let story = element.getElementsByClassName("preview")[0].innerHTML;
-    alert(story);
+    document.getElementById("popup_title").innerHTML = element.getElementsByClassName("title")[0].innerText;
+    document.getElementById("popup_story").innerHTML = element.getElementsByClassName("preview")[0].innerText;
 
     let url = "loadStory.php/?q=" + id;
     readFile(url)
