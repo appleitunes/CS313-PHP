@@ -25,7 +25,9 @@
                 <p id="popup_story"></p>
                 <textarea></textarea>
                 <button>Post</button>
+                <br>
                 <hr>
+                <br>
                 <div id="popup_reviews"></div>
             </div>
         </div>
