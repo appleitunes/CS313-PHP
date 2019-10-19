@@ -177,7 +177,7 @@ function display(id) {
     document.body.style.height = "100%";
     document.body.style.overflow = "hidden";
 
-    let url = "https://gentle-meadow-extreme.herokuapp.com/Typing/loadStory.php/" + id;
+    let url = "loadStory.php/" + id;
     readFile(url)
     .then((response) => {
         alert(response);
