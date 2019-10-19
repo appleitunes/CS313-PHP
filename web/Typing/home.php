@@ -13,10 +13,10 @@
         <?php
             $storyID = null;
 
-            foreach ($db->query('SELECT story_id, author, story FROM stories;') as $row) {
-                $storyID = $row['story_id'];
-                $author = $row['author'];
+            foreach ($db->query('SELECT title, story, author FROM stories;') as $row) {
+                $title = $row['title'];
                 $story = $row['story'];
+                $author = $row['author'];
 
                 echo "<strong>$author</strong>";
                 echo "<br>$story";

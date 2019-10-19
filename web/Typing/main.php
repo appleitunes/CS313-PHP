@@ -1,3 +1,5 @@
+<?php require "../../db/dbConnect.php"; ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,7 +45,25 @@
 
                 <div id="stories">
                     <h1>Stories</h1>
-                    <div class="story" onclick="display('id')">
+
+                    <?php
+                        $storyID = null;
+
+                        foreach ($db->query('SELECT story_id, title, story, author FROM stories;') as $row) {
+                            $id = $row['story_id'];
+                            $title = $row['title'];
+                            $story = $row['story'];
+                            $author = $row['author'];
+
+                            echo "<div class='story' onclick=\"display('$id')\">";
+                            echo "<div class='title'>$title</div>";
+                            echo "<br>";
+                            echo "<div class='preview'>$story</div>";
+                            echo "<div>";
+                        }
+                    ?>
+
+                    <!-- <div class="story" onclick="display('id')">
                         <div class="title">Test</div>
                         <div class="rating">5/5 stars</div>
                         <br>
@@ -57,7 +77,7 @@
                         <br>
                         <div class="preview">This is a test.</div>
                         <div class="review_count">5 reviews</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
