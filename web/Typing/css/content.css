@@ -1,0 +1,16 @@
+#content_area {
+    display: none;
+    margin: 0 auto;
+}
+
+#text_area {
+    width: 70%;
+    height: 18em;
+    resize: none;
+    font-size: 1.25em;
+    padding: 2em;
+    border-color: gray;
+    border-radius: 1em;
+    outline: 0;
+    line-height: 2em;
+}

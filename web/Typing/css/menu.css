@@ -1,0 +1,9 @@
+#menu_area {
+    display: none;
+    margin: 0 auto;
+}
+
+#message {
+    visibility: hidden;
+    color: red;
+}

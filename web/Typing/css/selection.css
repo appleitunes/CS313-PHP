@@ -1,0 +1,40 @@
+#stories {
+    position: absolute;
+    top: 100%;
+    width: 70%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-top: gray solid 1px;
+    padding: 1em;
+}
+
+.story {
+    cursor: pointer;
+    border: gray 1px solid;
+    padding: 2em;
+    border-radius: 1em;
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+.story:hover {
+    background-color: lightgray;
+}
+
+.story .title {
+    text-align: left;
+    font-weight: bold;
+}
+
+.story .rating {
+    float: right;
+}
+
+.story .preview {
+    float: left;
+}
+
+.story .review_count {
+    float: right;
+}
