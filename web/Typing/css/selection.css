@@ -16,7 +16,8 @@
     border-radius: 1em;
     max-width: 30em;
     margin: 0 auto;
-    height: 10em;
+    height: 3em;
+    overflow: hidden;
 }
 
 .story:hover {
@@ -37,6 +38,5 @@
     float: left;
     width: 50%;
     overflow: hidden;
-    height: 25%;
     border: solid;
 }
