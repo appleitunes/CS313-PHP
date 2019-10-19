@@ -185,7 +185,7 @@ function display(id) {
     let url = "loadStory.php/?q=" + id;
     readFile(url)
     .then((response) => {
-        document.getElementById("popup_reviews").innerHTML = response;
+        document.getElementById("popup_comments").innerHTML = response;
     });
 }
 
