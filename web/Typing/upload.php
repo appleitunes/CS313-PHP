@@ -1,5 +1,5 @@
 <?php
-    echo $_POST;
+    echo json_encode($_POST);
 
     try {
         if (isset($_POST["text_area"])) {
