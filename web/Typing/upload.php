@@ -1,6 +1,6 @@
 <?php
     try {
-        $content = $_post["text_area"];
+        $content = $_POST["text_area"];
 
         echo $content;
 
