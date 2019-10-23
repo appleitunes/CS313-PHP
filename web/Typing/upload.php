@@ -1,7 +1,7 @@
 <?php
     try {
-        if (isset($_POST["text_area"])) {
-            $content = $_POST["text_area"];
+        if (isset($_POST["content"])) {
+            $content = $_POST["content"];
 
             echo $content;
 
