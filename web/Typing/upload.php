@@ -2,7 +2,7 @@
     try {
         $content = $_post["text_area"];
 
-        $sql = "INSERT INTO scriptures (title, story, author) VALUES ('test', '$content', 'test');";
+        $sql = "INSERT INTO stories (title, story, author) VALUES ('test', '$content', 'test');";
 
         if ($db->query($sql) == TRUE) {
             echo "New story uploaded successfully";
