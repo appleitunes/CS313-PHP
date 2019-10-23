@@ -15,10 +15,9 @@
                 echo "Error: Story not uploaded.";
             }
 
-            // /* Redirect browser */
-            // header("Location: main.php"); 
-            // exit();
-
+            /* Redirect browser */
+            header("Location: main.php"); 
+            exit();
         }
     }
     catch (Exception $e) {
