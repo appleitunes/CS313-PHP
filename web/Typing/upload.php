@@ -1,16 +1,18 @@
 <?php
     try {
-        $content = $_POST["text_area"];
+        if (isset($_POST["text_area"])) {
+            $content = $_POST["text_area"];
 
-        echo $content;
+            echo $content;
 
-        // $sql = "INSERT INTO stories (title, story, author) VALUES ('test', '$content', 'test');";
+            // $sql = "INSERT INTO stories (title, story, author) VALUES ('test', '$content', 'test');";
 
-        // if ($db->query($sql) == TRUE) {
-        //     echo "New story uploaded successfully";
-        // } else {
-        //     echo "Error: " . $sql . "<br>" . $db->error;
-        // }
+            // if ($db->query($sql) == TRUE) {
+            //     echo "New story uploaded successfully";
+            // } else {
+            //     echo "Error: " . $sql . "<br>" . $db->error;
+            // }
+        }
     }
     catch (Exception $e) {
         echo $e->getMessage();
