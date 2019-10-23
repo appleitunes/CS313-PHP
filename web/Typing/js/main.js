@@ -14,7 +14,7 @@ window.onload = () => {
         "menu": document.getElementById("menu_area"),
         "content": document.getElementById("content_area"),
         "message": document.getElementById("message"),
-        "text": document.getElementById("text_area"),
+        "text": document.getElementById("content"),
         "count": document.getElementById("count_down"),
         "warning": document.getElementById("warning"),
         "context": document.getElementById("warning_context"),
