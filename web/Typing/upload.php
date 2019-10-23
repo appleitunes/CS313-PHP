@@ -1,4 +1,6 @@
 <?php
+    echo $_POST;
+
     try {
         if (isset($_POST["text_area"])) {
             $content = $_POST["text_area"];
