@@ -5,9 +5,9 @@
     </head>
     <body>
         <form action="update.php" method="post">
-            <input type="text" placeholder="Author">
+            <input name="author" type="text" placeholder="Author">
             <br>
-            <input type="text" placeholder="Title">
+            <input name="title" type="text" placeholder="Title">
             <br>
             <textarea name="content_text"><?php echo $_POST["content_text"]; ?></textarea>
             <br>
