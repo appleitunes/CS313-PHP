@@ -79,7 +79,7 @@
                 <div id="warning_context"><span id="warning"></span> seconds until failure</div>
                 <br>
                 <form action="main.php" method="post">
-                    <textarea id="content" placeholder="Start typing to begin..."></textarea>                
+                    <textarea id="text_area" placeholder="Start typing to begin..."></textarea>                
                     <br>
                     <button onclick="stopTyping()" class="gray_button">Back</button>
                     <button onclick="finish()" class="red_button" id="stop_button">Stop</button>
