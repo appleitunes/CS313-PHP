@@ -2,13 +2,15 @@
     try {
         $content = $_post["text_area"];
 
-        $sql = "INSERT INTO stories (title, story, author) VALUES ('test', '$content', 'test');";
+        echo $content;
 
-        if ($db->query($sql) == TRUE) {
-            echo "New story uploaded successfully";
-        } else {
-            echo "Error: " . $sql . "<br>" . $db->error;
-        }
+        // $sql = "INSERT INTO stories (title, story, author) VALUES ('test', '$content', 'test');";
+
+        // if ($db->query($sql) == TRUE) {
+        //     echo "New story uploaded successfully";
+        // } else {
+        //     echo "Error: " . $sql . "<br>" . $db->error;
+        // }
     }
     catch (Exception $e) {
         echo $e->getMessage();
