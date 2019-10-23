@@ -1,6 +1,7 @@
 var i, start, countDown, interval, elements, finished;
 
 window.onload = () => {
+
     document.getElementById("cancel").onclick = () => {
         document.getElementById("dark").style.display = "none";
         document.body.style.height = "auto";

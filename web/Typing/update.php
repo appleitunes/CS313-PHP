@@ -1,9 +1,11 @@
 <?php
     try {
         if (isset($_POST["content_text"])) {
+            $title = $_POST["title"];
             $content = $_POST["content_text"];
+            $author = $_POST["author"];
 
-            $sql = "INSERT INTO stories (title, story, author) VALUES ('test', '$content', 'test');";
+            $sql = "INSERT INTO stories (title, story, author) VALUES ('$title', '$content', '$author');";
 
             if ($db->query($sql) == TRUE) {
                 echo "New story uploaded successfully";
@@ -11,7 +13,10 @@
                 echo "Error: Story not uploaded.";
             }
 
-            $_POST = array();
+            /* Redirect browser */
+            header("Location: main.php"); 
+            exit();
+
         }
     }
     catch (Exception $e) {

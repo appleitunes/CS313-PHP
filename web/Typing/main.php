@@ -1,6 +1,5 @@
 <?php 
     require "../../db/dbConnect.php";
-    require "upload.php";
 ?>
 
 <!DOCTYPE html>
@@ -72,13 +71,11 @@
                     ?>
                 </div>
             </div>
-
-            <!-- Content -->
-            <div id="content_area" class="child">
+            <div id="content_area">
                 <h3>Time remaining: <span id="count_down">0:00</span></h3>
                 <div id="warning_context"><span id="warning"></span> seconds until failure</div>
                 <br>
-                <form action="main.php" method="post">
+                <form action="submit.php" method="post">
                     <textarea id="content_text" name="content_text" placeholder="Start typing to begin..."></textarea>                
                     <br>
                     <button type="submit" class="blue_button">Upload</button>
