@@ -1,4 +1,6 @@
 <?php
+    require "../../db/dbConnect.php";
+
     try {
         if (isset($_POST["content_text"])) {
             $title = $_POST["title"];
