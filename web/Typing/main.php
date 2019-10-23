@@ -78,12 +78,12 @@
                 <h3>Time remaining: <span id="count_down">0:00</span></h3>
                 <div id="warning_context"><span id="warning"></span> seconds until failure</div>
                 <br>
-                <form action="upload.php" method="post">
+                <form action="main.php" method="post">
                     <textarea id="text_area" placeholder="Start typing to begin..."></textarea>                
                     <br>
                     <button onclick="stopTyping()" class="gray_button">Back</button>
                     <button onclick="finish()" class="red_button" id="stop_button">Stop</button>
-                    <button type="submit" class="blue_button">Save</button>
+                    <button type="submit" class="blue_button">Upload</button>
                 </form>
             </div>
 
