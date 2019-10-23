@@ -5,17 +5,19 @@
             $content = $_POST["content_text"];
             $author = $_POST["author"];
 
-            $sql = "INSERT INTO stories (title, story, author) VALUES ('$title', '$content', '$author');";
+            echo "$title<br>$content<br>$author";
 
-            if ($db->query($sql) == TRUE) {
-                echo "New story uploaded successfully";
-            } else {
-                echo "Error: Story not uploaded.";
-            }
+            // $sql = "INSERT INTO stories (title, story, author) VALUES ('$title', '$content', '$author');";
 
-            /* Redirect browser */
-            header("Location: main.php"); 
-            exit();
+            // if ($db->query($sql) == TRUE) {
+            //     echo "New story uploaded successfully";
+            // } else {
+            //     echo "Error: Story not uploaded.";
+            // }
+
+            // /* Redirect browser */
+            // header("Location: main.php"); 
+            // exit();
 
         }
     }
