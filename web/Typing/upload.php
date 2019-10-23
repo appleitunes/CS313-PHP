@@ -2,8 +2,8 @@
     echo json_encode($_POST);
 
     try {
-        if (isset($_POST["content"])) {
-            $content = $_POST["content"];
+        if (isset($_POST["content_text"])) {
+            $content = $_POST["content_text"];
 
             echo $content;
 
