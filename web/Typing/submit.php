@@ -7,17 +7,16 @@
     </head>
     <body>
         <div class="container">
-            <div class="child">
-                <form action="update.php" method="post">
-                    <input name="author" type="text" placeholder="Author">
-                    <br>
-                    <input name="title" type="text" placeholder="Title">
-                    <br>
-                    <textarea name="content_text"><?php echo $_POST["content_text"]; ?></textarea>
-                    <br>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+            <h1>Submit Story</h1>
+            <form action="update.php" method="post">
+                <input name="author" type="text" placeholder="Author">
+                <br><br>
+                <input name="title" type="text" placeholder="Title">
+                <br><br>
+                <textarea name="content_text"><?php echo $_POST["content_text"]; ?></textarea>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </body>
 </html>
