@@ -17,6 +17,8 @@
                 <br><br>
                 <button type="submit">Submit</button>
             </form>
+            <br><br>
+            <a href="main.php"><button>Submit</button></a>
         </div>
     </body>
 </html>
