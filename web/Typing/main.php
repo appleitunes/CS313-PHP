@@ -1,6 +1,6 @@
 <?php 
-    // require "../../db/dbConnect.php";
-    // require "upload.php";
+    require "../../db/dbConnect.php";
+    require "upload.php";
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +52,7 @@
                 <div id="stories">
                     <h1>Stories</h1>
 
-                    <!-- <?php
+                    <?php
                         $storyID = null;
 
                         foreach ($db->query('SELECT story_id, title, story, author FROM stories;') as $row) {
@@ -69,7 +69,7 @@
                             echo "</div>";
                             echo "<br>";
                         }
-                    ?> -->
+                    ?>
                 </div>
             </div>
 
@@ -79,7 +79,7 @@
                 <div id="warning_context"><span id="warning"></span> seconds until failure</div>
                 <br>
                 <form action="main.php" method="post">
-                    <textarea id="content_text" placeholder="Start typing to begin..."></textarea>                
+                    <textarea id="content_text" name="content_text" placeholder="Start typing to begin..."></textarea>                
                     <br>
                     <button onclick="stopTyping()" class="gray_button">Back</button>
                     <button onclick="finish()" class="red_button" id="stop_button">Stop</button>
