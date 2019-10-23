@@ -13,9 +13,9 @@
         <link rel="stylesheet" href="css/popup.css">
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/selection.css">
-        <link rel="stylesheet" href="css/content.css">
+        <link rel="stylesheet" href="css/typing.css">
 
-        <script src="js/main.js"></script>
+        <script src="js/content.js"></script>
         
         <link rel="icon" type="image/png" href="images/logo.png">
     </head>
