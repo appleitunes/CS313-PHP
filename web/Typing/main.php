@@ -1,5 +1,5 @@
 <?php 
-    require "../../db/dbConnect.php";
+    // require "../../db/dbConnect.php";
     require "upload.php";
 ?>
 
@@ -53,22 +53,22 @@
                     <h1>Stories</h1>
 
                     <?php
-                        $storyID = null;
+                        // $storyID = null;
 
-                        foreach ($db->query('SELECT story_id, title, story, author FROM stories;') as $row) {
-                            $id = $row['story_id'];
-                            $title = $row['title'];
-                            $story = $row['story'];
-                            $author = $row['author'];
+                        // foreach ($db->query('SELECT story_id, title, story, author FROM stories;') as $row) {
+                        //     $id = $row['story_id'];
+                        //     $title = $row['title'];
+                        //     $story = $row['story'];
+                        //     $author = $row['author'];
 
-                            echo "<div class='story' id='story$id' onclick=\"display('$id')\">";
-                            echo "<div class='title'>$title</div>";
-                            echo "<div class='author'>$author</div>";
-                            echo "<br>";
-                            echo "<div class='preview'>$story</div>";
-                            echo "</div>";
-                            echo "<br>";
-                        }
+                        //     echo "<div class='story' id='story$id' onclick=\"display('$id')\">";
+                        //     echo "<div class='title'>$title</div>";
+                        //     echo "<div class='author'>$author</div>";
+                        //     echo "<br>";
+                        //     echo "<div class='preview'>$story</div>";
+                        //     echo "</div>";
+                        //     echo "<br>";
+                        // }
                     ?>
                 </div>
             </div>
