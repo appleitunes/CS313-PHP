@@ -8,7 +8,7 @@
     <body>
         <div class="container">
             <h1>Submit Story</h1>
-            <form action="update.php" method="post" accept-charset="UTF-8>
+            <form action="update.php" method="post" accept-charset="UTF-8">
                 <input name="author" type="text" placeholder="Author">
                 <br><br>
                 <input name="title" type="text" placeholder="Title">
