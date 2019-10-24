@@ -197,8 +197,8 @@ function readFile(fileName) {
 }
 
 function comment() {
-    let comment = document.getElementById("comment_area").value;
-    let url = $url = `comment.php?id=${currID}&comment=${comment}`;
+    let comment = document.getElementById("comment_area").value.split(" ").join("+");
+    let url = $url = `comment.php/?q=${comment}`;
 
     readFile(url)
     .then((message) => {
