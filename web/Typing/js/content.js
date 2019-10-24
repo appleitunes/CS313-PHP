@@ -1,4 +1,4 @@
-var i, start, countDown, interval, elements, finished;
+var i, start, countDown, interval, elements, finished, currID;
 
 window.onload = () => {
 
@@ -154,6 +154,8 @@ function finish() {
  * Display 
  */
 function display(id) {
+    currID = id;
+
     document.getElementById("dark").style.display = "block";
     document.body.style.height = "100%";
     document.body.style.overflow = "hidden";
@@ -191,5 +193,15 @@ function readFile(fileName) {
         }
 
         rawFile.send(null);
+    });
+}
+
+function comment() {
+    let comment = document.getElementById("comment_area").value;
+    let url = $url = `http://localhost/comment.php?id=${currID}&comment=${comment}`;
+
+    readFile(url)
+    .then((message) => {
+        alert(message);
     });
 }
