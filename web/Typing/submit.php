@@ -15,7 +15,7 @@
                 <br><br>
                 <input name="title" type="text" placeholder="Title">
                 <br><br>
-                <textarea name="content_text"><?php echo $_POST["content_text"]; ?></textarea>
+                <textarea name="content_text"><?php echo str_replace("\n", "<br>", $_POST["content_text"]); ?></textarea>
                 <br><br>
                 <button type="submit">Submit</button>
             </form>

@@ -19,6 +19,9 @@
             header("Location: main.php"); 
             exit();
         }
+        else {
+            echo "Failed to upload.";
+        }
     }
     catch (Exception $e) {
         echo $e->getMessage();
