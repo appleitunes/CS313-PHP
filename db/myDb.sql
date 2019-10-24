@@ -29,14 +29,12 @@ VALUES
 );
 
 INSERT INTO STORIES (
-    story_id,
     title,
     story,
     author
 )
 VALUES
 (
-    5,
     'Adam the Volleyball Champion',
     'Hello, World.',
     'Adam Chlarson'
@@ -49,5 +47,5 @@ INSERT INTO comment (
 VALUES
 (
     'This is trash',
-    5
+    1
 );

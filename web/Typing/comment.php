@@ -1,4 +1,6 @@
 <?php
+    require "../../db/dbConnect.php";
+
     $link = "$_SERVER[REQUEST_URI]";
     $rawData = explode("?q=", $link)[1];
     $splitVars = explode("&&", $rawData);
@@ -7,5 +9,11 @@
     $splitData = explode("+", $splitVars[1]);
     $comment = implode(" ", $splitData);
 
-    echo "$id <br> $comment";
+    $sql = "INSERT INTO Comment (comment, story_id) VALUES ('$comment', $id);";
+
+    if ($db->query($sql) == TRUE) {
+        echo "New story uploaded successfully";
+    } else {
+        echo "Error: Story not uploaded.";
+    }
 ?>
