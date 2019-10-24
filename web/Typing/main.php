@@ -28,7 +28,7 @@
                 <hr>
                 <div id="comment_container">
                     <textarea id="comment_area"></textarea>
-                    <button>Post</button>
+                    <button onclick="comment()">Post</button>
                 </div>
                 <hr>
                 <div id="popup_comments"></div>
