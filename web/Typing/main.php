@@ -27,7 +27,7 @@
                 <p id="popup_story"></p>
                 <hr>
                 <div id="comment_container">
-                    <textarea id="comment_area"></textarea>
+                    <textarea id="comment_area" placeholder="Comment"></textarea>
                     <button onclick="comment()">Post</button>
                 </div>
                 <hr>
