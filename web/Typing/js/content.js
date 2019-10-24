@@ -165,7 +165,7 @@ function display(id) {
     document.getElementById("popup_author").innerHTML = element.getElementsByClassName("author")[0].innerText;
 
     let story = element.getElementsByClassName("preview")[0].innerHTML;
-    document.getElementById("popup_story").innerHTML = story.replaceAll("a", "b");
+    document.getElementById("popup_story").innerHTML = story.replace("a", "b");
 
     let url = "loadStory.php/?q=" + id;
     readFile(url)
