@@ -12,6 +12,7 @@
     height: auto;
     float: right;
     cursor: pointer;
+    position: fixed;
 }
 
 #popup {
@@ -35,6 +36,7 @@
 #comment_container {
     height: 3.5em;
     width: 70%;
+    margin: auto;
 }
 
 #comment_container textarea {
@@ -65,4 +67,5 @@
 
 #popup_comments {
     width: 70%;
+    margin: auto;
 }
