@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/story.css">
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/selection.css">
         <link rel="stylesheet" href="css/typing.css">
