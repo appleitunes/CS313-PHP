@@ -4,7 +4,7 @@
     try {
         if (isset($_POST["content_text"])) {
             $title = $_POST["title"];
-            $content = htmlspecialchars(str_replace("'", "`", str_replace('"', "\"", $_POST["content_text"])));
+            $content = nl2br(htmlspecialchars(str_replace("'", "`", str_replace('"', "\"", $_POST["content_text"]))));
             $author = $_POST["author"];
  
             $sql = "INSERT INTO stories (title, story, author) VALUES ('$title', '$content', '$author');";

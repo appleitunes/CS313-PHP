@@ -15,37 +15,3 @@ CREATE TABLE Comment (
 ,   comment         VARCHAR(255)        NOT NULL
 ,   story_id        SERIAL              REFERENCES Stories (story_id)
 );
-
-INSERT INTO STORIES (
-    title,
-    story,
-    author
-)
-VALUES
-(
-    'An Alien Encounter',
-    'There I was, on the top of Mount Everest, looking down at an alien spaceship I found.',
-    'Shane Davenport'
-);
-
-INSERT INTO STORIES (
-    title,
-    story,
-    author
-)
-VALUES
-(
-    'Adam the Volleyball Champion',
-    'Hello, World.',
-    'Adam Chlarson'
-);
-
-INSERT INTO comment (
-    comment,
-    story_id
-)
-VALUES
-(
-    'This is trash',
-    1
-);
