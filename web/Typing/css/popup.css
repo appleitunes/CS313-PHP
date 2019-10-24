@@ -53,3 +53,9 @@
 #comment_container button:hover {
     background-color: lightgray;
 }
+
+#popup_story {
+    width: 60%;
+    font-size: 1.15em;
+    margin: auto;
+}
