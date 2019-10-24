@@ -200,8 +200,7 @@ function comment() {
     let comment = document.getElementById("comment_area").value.split(" ").join("+");
     let url = $url = `comment.php/?q=${currID}&&${comment}`;
 
-    readFile(url)
-    .then((message) => {
-        alert(message);
-    });
+    readFile(url);
+
+    document.getElementById("popup_comments").innerHTML = `-${comment}<br>` + document.getElementById("popup_comments").innerHTML
 }

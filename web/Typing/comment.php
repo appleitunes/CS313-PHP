@@ -12,8 +12,8 @@
     $sql = "INSERT INTO Comment (comment, story_id) VALUES ('$comment', $id);";
 
     if ($db->query($sql) == TRUE) {
-        echo "New story uploaded successfully";
+        echo "New comment.";
     } else {
-        echo "Error: Story not uploaded.";
+        echo "Error: comment not uploaded.";
     }
 ?>
