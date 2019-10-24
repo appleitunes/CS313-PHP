@@ -203,5 +203,6 @@ function comment() {
 
     readFile(url);
 
-    document.getElementById("popup_comments").innerHTML = `-${comment}<br>` + document.getElementById("popup_comments").innerHTML
+    document.getElementById("popup_comments").innerHTML = `-${comment}<br>` + document.getElementById("popup_comments").innerHTML;
+    document.getElementById("comment_area").value = "";
 }
