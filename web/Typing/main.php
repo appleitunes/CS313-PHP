@@ -22,8 +22,8 @@
         <div id="dark">
             <div id="popup">
                 <img src="images/cancel.png" id="cancel">
-                <h1 id="popup_title"></h1>
-                <p id="popup_author"></p>
+                <h1 id="popup_title" style="text-align: center;"></h1>
+                <p id="popup_author" style="text-align: center;"></p>
                 <div id="popup_story"></div>
                 <hr>
                 <div id="comment_container">
