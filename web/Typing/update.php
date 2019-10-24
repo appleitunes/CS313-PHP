@@ -4,9 +4,9 @@
     try {
         if (isset($_POST["content_text"])) {
             $title = $_POST["title"];
-            $content = $_POST["content_text"];
+            $content = str_replace('"', "", $_POST["content_text"]);
             $author = $_POST["author"];
-
+ 
             $sql = "INSERT INTO stories (title, story, author) VALUES ('$title', '$content', '$author');";
 
             if ($db->query($sql) == TRUE) {
