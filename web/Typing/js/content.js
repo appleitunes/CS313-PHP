@@ -163,7 +163,7 @@ function display(id) {
     let element = document.getElementById("story" + id);
     document.getElementById("popup_title").innerHTML = element.getElementsByClassName("title")[0].innerText;
     document.getElementById("popup_author").innerHTML = element.getElementsByClassName("author")[0].innerText;
-    document.getElementById("popup_story").innerHTML = element.getElementsByClassName("preview")[0].innerText;
+    document.getElementById("popup_story").innerHTML = element.getElementsByClassName("preview")[0].innerHTML;
 
     let url = "loadStory.php/?q=" + id;
     readFile(url)
