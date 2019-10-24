@@ -24,7 +24,7 @@
                 <img src="images/cancel.png" id="cancel">
                 <h1 id="popup_title"></h1>
                 <p id="popup_author"></p>
-                <p id="popup_story"></p>
+                <div id="popup_story"></div>
                 <hr>
                 <div id="comment_container">
                     <textarea id="comment_area" placeholder="Comment"></textarea>
