@@ -4,6 +4,8 @@
         <title>Submit Story</title>
         <link rel="stylesheet" href="css/submit.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="container">
