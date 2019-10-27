@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/selection.css">
         <link rel="stylesheet" href="css/typing.css">
 
-        <script src="js/main.js"></script>
+        <script src="js/content.js"></script>
         
         <link rel="icon" type="image/png" href="images/logo.png">
     </head>
@@ -27,7 +27,7 @@
                 <div id="popup_story"></div>
                 <hr>
                 <div id="comment_container">
-                    <textarea id="comment_area" placeholder="Comment"></textarea>
+                    <textarea maxlength="255" id="comment_area" placeholder="Comment"></textarea>
                     <button onclick="comment()">Post</button>
                 </div>
                 <hr>
