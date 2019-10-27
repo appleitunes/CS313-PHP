@@ -1,5 +1,14 @@
 var i, start, countDown, interval, elements, finished, currID;
 
+function maxLength(el) {    
+    if (!('maxLength' in el)) {
+        var max = el.attributes.maxLength.value;
+        el.onkeypress = function () {
+            if (this.value.length >= max) return false;
+        };
+    }
+}
+
 window.onload = () => {
 
     document.getElementById("cancel").onclick = () => {
@@ -35,6 +44,8 @@ window.onload = () => {
             this.selectionEnd = s + 1; 
         }
     }
+
+    maxLength(elements["text"]);
 };
 
 /**
