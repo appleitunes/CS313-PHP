@@ -206,7 +206,7 @@ function comment() {
     readFile(url)
     .then((error) => {
         if (error == "1") {
-            document.getElementById("popup_comments").innerHTML = `-${comment}<br>` + document.getElementById("popup_comments").innerHTML;
+            document.getElementById("popup_comments").innerHTML = `-${comment}<br><hr><br>` + document.getElementById("popup_comments").innerHTML;
             document.getElementById("comment_area").value = "";
         }
         else {
