@@ -5,7 +5,7 @@
         $id = $_GET["id"];
         $comment = $_GET["comment"];
 
-        $sql = "INSERT INTO Comment (comment, story_id, created_date) VALUES ('$comment', $id;";
+        $sql = "INSERT INTO Comment (comment, story_id) VALUES ('$comment', $id;";
 
         if ($db->query($sql) == TRUE) {
             echo "1";
