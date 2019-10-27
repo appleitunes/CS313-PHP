@@ -203,8 +203,14 @@ function comment() {
     let package = comment.split(" ").join("+");
     let url = $url = `comment.php/?q=${currID}&&${package}`;
 
-    readFile(url);
-
-    document.getElementById("popup_comments").innerHTML = `-${comment}<br>` + document.getElementById("popup_comments").innerHTML;
-    document.getElementById("comment_area").value = "";
+    readFile(url)
+    .then((error) => {
+        if (error == "1") {
+            document.getElementById("popup_comments").innerHTML = `-${comment}<br>` + document.getElementById("popup_comments").innerHTML;
+            document.getElementById("comment_area").value = "";
+        }
+        else {
+            alert(error);
+        }
+    });
 }
