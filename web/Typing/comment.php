@@ -10,8 +10,8 @@
         // $splitData = explode("+", $splitVars[1]);
         // $comment = implode(" ", $splitData);
 
-        $author = $_GET["id"];
-        $message = $_GET["comment"];
+        $id = $_GET["id"];
+        $comment = $_GET["comment"];
 
         $sql = "INSERT INTO Comment (comment, story_id) VALUES ('$comment', $id);";
 
