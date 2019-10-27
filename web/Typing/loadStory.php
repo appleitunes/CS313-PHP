@@ -5,7 +5,7 @@
         $link = "$_SERVER[REQUEST_URI]";
         $id = explode("?q=", $link)[1];
 
-        foreach ($db->query("SELECT comment FROM Comment c WHERE c.story_id = '$id' ORDER BY created_date;") as $row) {
+        foreach ($db->query("SELECT comment FROM Comment c WHERE c.story_id = '$id;'") as $row) {
             $comment = $row["comment"];
 
             echo "- $comment<br><hr><br>";

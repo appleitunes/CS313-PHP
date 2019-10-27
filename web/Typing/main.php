@@ -54,7 +54,7 @@
                     <?php
                         $storyID = null;
 
-                        foreach ($db->query('SELECT story_id, title, story, author FROM stories ORDER BY created_date;') as $row) {
+                        foreach ($db->query('SELECT story_id, title, story, author FROM stories;') as $row) {
                             $id = $row['story_id'];
                             $title = $row['title'];
                             $story = $row['story'];

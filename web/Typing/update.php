@@ -7,7 +7,7 @@
             $content = nl2br(htmlspecialchars(str_replace("'", "`", str_replace('"', "\"", $_POST["content_text"]))));
             $author = $_POST["author"];
  
-            $sql = "INSERT INTO stories (title, story, author, created_date) VALUES ('$title', '$content', '$author', CURDATE());";
+            $sql = "INSERT INTO stories (title, story, author, created_date) VALUES ('$title', '$content', '$author');";
 
             if ($db->query($sql) == TRUE) {
                 echo "New story uploaded successfully";
