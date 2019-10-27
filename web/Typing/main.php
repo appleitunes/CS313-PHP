@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/selection.css">
         <link rel="stylesheet" href="css/typing.css">
 
-        <script src="js/content.js"></script>
+        <script src="js/main.js"></script>
         
         <link rel="icon" type="image/png" href="images/logo.png">
     </head>
