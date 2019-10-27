@@ -27,7 +27,7 @@
                 <div id="popup_story"></div>
                 <hr>
                 <div id="comment_container">
-                    <textarea maxlength="254" id="comment_area" placeholder="Comment"></textarea>
+                    <textarea id="comment_area" placeholder="Comment"></textarea>
                     <button onclick="comment()">Post</button>
                 </div>
                 <hr>
