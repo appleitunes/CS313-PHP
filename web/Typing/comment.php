@@ -2,14 +2,6 @@
     try {
         require "../../db/dbConnect.php";
 
-        // $link = "$_SERVER[REQUEST_URI]";
-        // $rawData = explode("?q=", $link)[1];
-        // $splitVars = explode("&&", $rawData);
-
-        // $id = $splitVars[0];
-        // $splitData = explode("+", $splitVars[1]);
-        // $comment = implode(" ", $splitData);
-
         $id = $_GET["id"];
         $comment = $_GET["comment"];
 
