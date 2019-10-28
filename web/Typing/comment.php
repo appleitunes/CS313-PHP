@@ -5,6 +5,10 @@
         $id = $_GET["id"];
         $comment = $_GET["comment"];
 
+        if (sizeof($comment) < 5) {
+            return;
+        }
+
         $sql = "INSERT INTO Comment (comment, story_id) VALUES ('$comment', $id);";
 
         if ($db->query($sql) == TRUE) {
