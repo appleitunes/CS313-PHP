@@ -6,10 +6,6 @@
             $title = $_POST["title"];
             $content = nl2br(htmlspecialchars(str_replace("'", "`", str_replace('"', "\"", $_POST["content_text"]))));
             $author = $_POST["author"];
-
-            if (sizeof($content) < 5) {
-                return;
-            }
  
             $sql = "INSERT INTO stories (title, story, author) VALUES ('$title', '$content', '$author');";
 
