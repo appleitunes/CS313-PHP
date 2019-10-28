@@ -6,6 +6,7 @@
         $comment = $_GET["comment"];
 
         if (sizeof($comment) < 5) {
+            echo "Insufficient length";
             return;
         }
 
