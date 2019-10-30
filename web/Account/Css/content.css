@@ -1,4 +1,4 @@
-.log_info {
+.content {
     width: fit-content;
     height: fit-content;
     text-align: center;
@@ -13,19 +13,7 @@
     overflow: auto;
 }
 
-.log_info #error_message {
-    color: red;
-    text-align: left;
-}
-
-.log_info input {
-    width: 25em;
-    height: 2em;
-    border-radius: 0.5em;
-    font-size: 1.25em;
-}
-
-.log_info button {
+.content button {
     cursor: pointer;
     padding: 0.5em;
     font-size: 1.25em;
@@ -33,7 +21,7 @@
     border: solid 1px gray;
 }
 
-.log_info button:hover {
+.content button:hover {
     color: white;
     background-color: darkgray;
 }

@@ -18,17 +18,19 @@
 
         <script src="Javascript/account.js"></script>
 
+        <link rel="stylesheet" href="Css/main.css">
         <link rel="stylesheet" href="Css/account.css">
     </head>
     <body>
         <div class="log_info">
+            <h1>Login</h1>
             <p id="error_message"></p>
             <input id="username" placeholder="Username">
-            <br>
+            <br><br>
             <input type="password" id="password" placeholder="Password">
-            <br>
+            <br><br>
             <button onclick="login()">Log In</button>
-            <br>
+            <br><br>
             <a href="signup_page.php">Sign Up</a>
         </div>
     </body>

@@ -17,13 +17,18 @@
         <title>Document</title>
 
         <script src="Javascript/account.js"></script>
+
+        <link rel="stylesheet" href="Css/main.css">
+        <link rel="stylesheet" href="Css/content.css">
     </head>
     <body>
-        <button onclick="logout()">Log Out</button>
-        <br>
-        <?php
-            $username = $_SESSION["username"];
-            echo "Hello, $username!";
-        ?>
+        <div class="content">
+            <?php
+                $username = $_SESSION["username"];
+                echo "Hello, $username!";
+            ?>
+            <br>
+            <button onclick="logout()">Log Out</button>
+        </div>
     </body>
 </html>
