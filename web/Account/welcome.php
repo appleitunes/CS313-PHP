@@ -25,7 +25,7 @@
         <div class="content">
             <?php
                 $username = $_SESSION["username"];
-                echo "Hello, $username!";
+                echo "<h1>Hello, $username!</h1>";
             ?>
             <br>
             <button onclick="logout()">Log Out</button>
