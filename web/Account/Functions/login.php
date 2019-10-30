@@ -19,9 +19,10 @@
                 $_SESSION["id"] = $row["unique_id"];
                 echo "0";
             }
-            else {
-                throw new Exception("No username matches this password.");
-            }
+        }
+
+        if (!isset($_SESSION["id"])) {
+            throw new Exception("No username matches this password.");
         }
     }
     catch (Exception $e) {
