@@ -1,5 +1,6 @@
 <?php
-    echo $_SESSION["id"];
+    $id = $_SESSION["id"];
+    echo "$id - h";
 
     if ($_SESSION["id"] != null) {
         header("Location: welcome.php"); 
