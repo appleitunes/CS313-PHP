@@ -24,6 +24,8 @@
                 $id2 = $row["pass"];
                 echo "$id1 \n $id2";
             }
+
+            return;
         }
 
         if (!isset($_SESSION["id"])) {
