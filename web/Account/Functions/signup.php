@@ -15,9 +15,35 @@
             throw new Exception("Passwords do not match.");
         }
 
+        // If the user's password is empty
+        if (strlen($password) < 7) {
+            throw new Exception("Password is empty.");
+        }
+
         // If the user's password is not long enough
         if (strlen($password) < 7) {
             throw new Exception("Password is too short.");
+        }
+
+        // The password must have at least one letter and one number
+        $number = false;
+        $letter = false;
+        $chars = str_split($password);
+        foreach ($chars as $char) {
+            if (is_numeric($char)) {
+                $number = true;
+            }
+            else {
+                $letter = true;
+            }
+        }
+
+        if (!$number) {
+            throw new Exception("Password does not contain a number.");
+        }
+
+        if ($letter) {
+            throw new Exception("Password does not contain a letter.");
         }
 
         // If account with this username already exists
