@@ -41,6 +41,7 @@ function httpCall(url) {
 
 function postVerification(responseText) {
     if (responseText == "0") {
+        alert("word");
         window.location.reload();
     }
     else {
