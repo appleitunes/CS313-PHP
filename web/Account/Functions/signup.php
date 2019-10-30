@@ -25,14 +25,6 @@
             throw new Exception("Password is too short.");
         }
 
-        if (!$number) {
-            throw new Exception("Password does not contain a number.");
-        }
-
-        if ($letter) {
-            throw new Exception("Password does not contain a letter.");
-        }
-
         // If account with this username already exists
         $select_sql = "SELECT unique_id FROM Accounts WHERE username='$username';";
         foreach ($db->query($select_sql) as $row) {
