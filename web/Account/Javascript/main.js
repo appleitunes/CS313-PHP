@@ -3,12 +3,12 @@ function login() {
     let password = document.getElementById("password").value;
 
     let url = `Functions/login.php?username=${username}&password=${password}`;
-    httpCall(url).then(postVerification(responseText));
+    httpCall(url).then((responseText) => postVerification(responseText));
 }
 
 function logout() {
     let url = `Functions/logout.php`;
-    httpCall(url).then(postVerification(responseText));
+    httpCall(url).then((responseText) => postVerification(responseText));
 }
 
 function signup() {
@@ -16,7 +16,7 @@ function signup() {
     let password = document.getElementById("password").value;
 
     let url = `Functions/signup.php?username=${username}&password=${password}`;
-    httpCall(url).then(postVerification(responseText));
+    httpCall(url).then((responseText) => postVerification(responseText));
 }
 
 function httpCall(url) {
