@@ -28,8 +28,8 @@
         // The password must have at least one letter and one number
         $number = false;
         $letter = false;
-        $chars = str_split($password);
-        foreach ($password as $char) {
+        for ($i = 0; $i < strlen($password); $i++){
+            $char = $password[$i];
             if (is_numeric($char)) {
                 $number = true;
             }
