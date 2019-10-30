@@ -20,9 +20,9 @@
                 echo "0";
             }
             else {
-                $id1 = $_SESSION["id"];
-                $id2 = $row["unique_id"];
-                echo "$id1 - $id2";
+                $id1 = $password;
+                $id2 = $row["pass"];
+                echo "$id1 \n $id2";
             }
         }
 
