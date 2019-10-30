@@ -18,11 +18,7 @@
             if (password_verify($password, $row["pass"])) {
                 $_SESSION["id"] = $row["unique_id"];
                 echo "0";
-            }
-            else {
-                $id1 = $password;
-                $id2 = $row["pass"];
-                echo "$id1 \n $id2";
+                return;
             }
         }
 
