@@ -11,7 +11,7 @@
         $sql = "INSERT INTO Accounts (username, pass) VALUES ('$username', '$password');";
 
         if ($db->query($sql) == TRUE) {
-            $_SESSION["id"] = $db->insert_id;
+            $_SESSION["id"] = $db->lastInsertId();
             echo "0";
         }
         else {
