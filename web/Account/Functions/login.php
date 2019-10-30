@@ -10,7 +10,7 @@
         $password = password_hash($_GET["password"], PASSWORD_DEFAULT);
 
         // Get the password and id of the item that matches this username
-        $sql = "SELECT pass, unique_id FROM Accounts WHERE username='$username';";
+        $sql = "SELECT unique_id, pass FROM Accounts WHERE username='$username';";
 
         foreach ($db->query($sql) as $row) {
 
@@ -18,7 +18,11 @@
             if (password_verify($password, $row["pass"])) {
                 $_SESSION["id"] = $row["unique_id"];
                 echo "0";
-                return;
+            }
+            else {
+                $id1 = $password;
+                $id2 = $row["pass"];
+                echo "$id1 \n $id2";
             }
         }
 
