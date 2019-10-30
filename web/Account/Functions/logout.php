@@ -5,7 +5,7 @@
     }
 
     try {
-        $_SESSION["id"] = null;
+        unset($_SESSION["id"]);
         echo "0";
     }
     catch (Exception $e) {
