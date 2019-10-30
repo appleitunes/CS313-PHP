@@ -1,3 +1,6 @@
+-- heroku pg:psql
+-- \i Database/db.sql
+
 DROP TABLE IF EXISTS Accounts;
 
 CREATE TABLE Accounts (
