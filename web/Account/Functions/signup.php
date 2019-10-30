@@ -16,7 +16,7 @@
         }
 
         // If the user's password is empty
-        if (strlen($password) < 7) {
+        if (strlen($password) === 0) {
             throw new Exception("Password is empty.");
         }
 
