@@ -14,8 +14,9 @@ function logout() {
 function signup() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
+    let password2 = document.getElementById("password2").value;
 
-    let url = `Functions/signup.php?username=${username}&password=${password}`;
+    let url = `Functions/signup.php?username=${username}&password=${password}&password2=${password2}`;
     httpCall(url).then((responseText) => postVerification(responseText));
 }
 
