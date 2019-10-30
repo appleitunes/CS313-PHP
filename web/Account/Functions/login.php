@@ -9,9 +9,8 @@
         $password = $_GET["password"];
 
         // Get the password and id of the item that matches this username
-        $sql = "SELECT unique_id, pass FROM Accounts WHERE username='$username';";
-
-        foreach ($db->query($sql) as $row) {
+        $select_sql = "SELECT unique_id, pass FROM Accounts WHERE username='$username';";
+        foreach ($db->query($select_sql) as $row) {
 
             // If the password in the database matches the inputted password
             if (password_verify($password, $row["pass"])) {

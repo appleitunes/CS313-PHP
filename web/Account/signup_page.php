@@ -23,8 +23,10 @@
         <br>
         Password: <input type="password" id="password">
         <br>
-        <button onclick="login()">Log In</button>
+        Confirm Password: <input type="password" id="password2">
         <br>
-        <a href="signup_page.php">Sign Up</a>
+        <button onclick="signup()">Sign Up</button>
+        <br>
+        <a href="login_page.php">Login</a>
     </body>
 </html>

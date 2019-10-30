@@ -6,11 +6,26 @@
 
     try {
         $username = $_GET["username"];
-        $password = password_hash($_GET["password"], PASSWORD_DEFAULT);
+        $password = $_GET["password"];
+        $password2 = $_GET["password2"];
 
-        $sql = "INSERT INTO Accounts (username, pass) VALUES ('$username', '$password');";
+        // If the user's passwords match
+        if ($password === $password2) {
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        }
+        else {
+            throw new Exception("Passwords do not match.");
+        }
 
-        if ($db->query($sql) == TRUE) {
+        // If account with this username already exists
+        $select_sql = "SELECT unique_id FROM Accounts WHERE username='$username';";
+        foreach ($db->query($select_sql) as $row) {
+            throw new Exception("User already exists.");
+        }
+
+        // Attempt to add new user
+        $insert_sql = "INSERT INTO Accounts (username, pass) VALUES ('$username', '$hashed_password');";
+        if ($db->query($insert_sql) == TRUE) {
             $_SESSION["id"] = $db->lastInsertId();
             $_SESSION["username"] = $username;
             echo "0";
