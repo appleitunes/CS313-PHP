@@ -29,7 +29,7 @@
         $number = false;
         $letter = false;
         $chars = str_split($password);
-        foreach ($chars as $char) {
+        foreach ($password as $char) {
             if (is_numeric($char)) {
                 $number = true;
             }
