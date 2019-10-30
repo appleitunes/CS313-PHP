@@ -6,8 +6,8 @@
 
     try {
         $username = $_GET["username"];
-        $password = $_GET["password"];
-        // $password = password_hash($_GET["password"], PASSWORD_DEFAULT);
+        // $password = $_GET["password"];
+        $password = password_hash($_GET["password"], PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO Accounts (username, pass) VALUES ('$username', '$password');";
 
