@@ -1,5 +1,5 @@
 <?php
-    if (!isset($_SESSION["id"])) {
+    if ($_SESSION["id"] == null) {
         header("Location: login_page.php"); 
         exit();
     }

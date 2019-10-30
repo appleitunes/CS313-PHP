@@ -1,5 +1,5 @@
 <?php
-    if (isset($_SESSION["id"])) {
+    if ($_SESSION["id"] != null) {
         header("Location: welcome.php"); 
         exit();
     }
