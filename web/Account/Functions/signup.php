@@ -8,12 +8,10 @@
         $username = $_GET["username"];
         $password = $_GET["password"];
         $password2 = $_GET["password2"];
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         // If the user's passwords match
-        if ($password === $password2) {
-            $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-        }
-        else {
+        if ($password !== $password2) {
             throw new Exception("Passwords do not match.");
         }
 

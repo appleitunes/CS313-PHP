@@ -16,12 +16,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
 
-        <script src="Javascript/main.js"></script>
+        <script src="Javascript/account.js"></script>
+
+        <link rel="stylesheet" href="Css/account.css">
     </head>
     <body>
-        Username: <input id="username">
+        <p id="error_message"></p>
+        <input id="username" placeholder="Username">
         <br>
-        Password: <input type="password" id="password">
+        <input type="password" id="password" placeholder="Password">
         <br>
         <button onclick="login()">Log In</button>
         <br>

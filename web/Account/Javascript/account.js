@@ -45,6 +45,6 @@ function postVerification(responseText) {
         window.location.reload();
     }
     else {
-        alert(responseText);
+        document.getElementById("error_message").innerHTML = responseText;
     }
 }

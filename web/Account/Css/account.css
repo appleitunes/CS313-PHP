@@ -1,0 +1,7 @@
+.log_info {
+    border: solid 1px gray;
+}
+
+#error_message {
+    color: red;
+}

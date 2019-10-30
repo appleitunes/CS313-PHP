@@ -16,17 +16,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
 
-        <script src="Javascript/main.js"></script>
+        <script src="Javascript/account.js"></script>
+
+        <link rel="stylesheet" href="Css/account.css">
     </head>
     <body>
-        Username: <input id="username">
-        <br>
-        Password: <input type="password" id="password">
-        <br>
-        Confirm Password: <input type="password" id="password2">
-        <br>
-        <button onclick="signup()">Sign Up</button>
-        <br>
-        <a href="login_page.php">Login</a>
+        <div class="log_info">
+            <p id="error_message"></p>
+            <input id="username" placeholder="Username">
+            <br>
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <input type="password" id="password2" placeholder="Confirm Password">
+            <br>
+            <button onclick="signup()">Sign Up</button>
+            <br>
+            <a href="login_page.php">Login</a>
+        </div>
     </body>
 </html>
