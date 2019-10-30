@@ -1,7 +1,10 @@
 <?php
-    try {
-        require "../Database/connect.php";
+    require "../Database/connect.php";
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
 
+    try {
         $username = $_GET["username"];
         $password = $_GET["password"];
         // $password = password_hash($_GET["password"], PASSWORD_DEFAULT);
