@@ -15,6 +15,11 @@
             throw new Exception("Passwords do not match.");
         }
 
+        // If the user's password is not long enough
+        if (strlen($password) < 7) {
+            throw new Exception("Password is too short.");
+        }
+
         // If account with this username already exists
         $select_sql = "SELECT unique_id FROM Accounts WHERE username='$username';";
         foreach ($db->query($select_sql) as $row) {

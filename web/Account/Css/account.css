@@ -36,4 +36,5 @@
 .log_info button:hover {
     color: white;
     background-color: darkgray;
+    border: none;
 }
