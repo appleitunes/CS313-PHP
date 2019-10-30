@@ -3,7 +3,8 @@
         require "../Database/connect.php";
 
         $username = $_GET["username"];
-        $password = password_hash($_GET["password"], PASSWORD_DEFAULT);
+        $password = $_GET["password"];
+        // $password = password_hash($_GET["password"], PASSWORD_DEFAULT);
 
         // Get the password and id of the item that matches this username
         $sql = "SELECT pass, unique_id FROM Accounts WHERE username='$username';";

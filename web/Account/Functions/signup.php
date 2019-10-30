@@ -3,7 +3,7 @@
         require "../Database/connect.php";
 
         $username = $_GET["username"];
-        $password = password_hash($_GET["password"], PASSWORD_DEFAULT);
+        $password = $_GET["password"];
 
         $sql = "INSERT INTO Accounts (username, pass) VALUES ('$username', $password);";
 
