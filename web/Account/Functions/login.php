@@ -15,7 +15,7 @@
         foreach ($db->query($sql) as $row) {
 
             // If the password in the database matches the inputted password
-            if ($password == $row["pass"]) {
+            if (password_verify($password, $row["pass"])) {
                 $_SESSION["id"] = $row["unique_id"];
                 echo "0";
             }
