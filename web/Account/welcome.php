@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
 
-        <script src="Javascript/main.js"></script>
+        <script src="Javascript/account.js"></script>
     </head>
     <body>
         <button onclick="logout()">Log Out</button>

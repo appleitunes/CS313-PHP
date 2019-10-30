@@ -2,6 +2,11 @@
     border: solid 1px gray;
 }
 
-#error_message {
+.log_info #error_message {
     color: red;
+}
+
+.log_info input {
+    width: 10em;
+    height: 1em;
 }

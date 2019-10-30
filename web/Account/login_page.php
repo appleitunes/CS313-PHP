@@ -21,13 +21,15 @@
         <link rel="stylesheet" href="Css/account.css">
     </head>
     <body>
-        <p id="error_message"></p>
-        <input id="username" placeholder="Username">
-        <br>
-        <input type="password" id="password" placeholder="Password">
-        <br>
-        <button onclick="login()">Log In</button>
-        <br>
-        <a href="signup_page.php">Sign Up</a>
+        <div class="log_info">
+            <p id="error_message"></p>
+            <input id="username" placeholder="Username">
+            <br>
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <button onclick="login()">Log In</button>
+            <br>
+            <a href="signup_page.php">Sign Up</a>
+        </div>
     </body>
 </html>
