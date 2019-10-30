@@ -6,7 +6,7 @@
 
     try {
         unset($_SESSION["id"]);
-        echo "Maybe";
+        echo "0";
     }
     catch (Exception $e) {
         echo $e->getMessage();

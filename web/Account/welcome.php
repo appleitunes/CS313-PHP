@@ -19,6 +19,6 @@
         <script src="Javascript/main.js"></script>
     </head>
     <body>
-        <button id="logout()">Log Out</button>
+        <button onclick="logout()">Log Out</button>
     </body>
 </html>
