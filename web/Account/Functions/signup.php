@@ -25,19 +25,6 @@
             throw new Exception("Password is too short.");
         }
 
-        // The password must have at least one letter and one number
-        $number = false;
-        $letter = false;
-        for ($i = 0; $i < strlen($password); $i++){
-            $char = $password[$i];
-            if (is_numeric($char)) {
-                $number = true;
-            }
-            else {
-                $letter = true;
-            }
-        }
-
         if (!$number) {
             throw new Exception("Password does not contain a number.");
         }
