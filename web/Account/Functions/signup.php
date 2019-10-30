@@ -6,13 +6,13 @@
 
     try {
         $username = $_GET["username"];
-        // $password = $_GET["password"];
         $password = password_hash($_GET["password"], PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO Accounts (username, pass) VALUES ('$username', '$password');";
 
         if ($db->query($sql) == TRUE) {
             $_SESSION["id"] = $db->lastInsertId();
+            $_SESSION["username"] = $username;
             echo "0";
         }
         else {

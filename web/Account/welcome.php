@@ -20,5 +20,10 @@
     </head>
     <body>
         <button onclick="logout()">Log Out</button>
+        <br>
+        <?php
+            $username = $_SESSION["username"];
+            echo "Hello, $username!";
+        ?>
     </body>
 </html>
