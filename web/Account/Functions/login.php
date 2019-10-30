@@ -6,8 +6,8 @@
 
     try {
         $username = $_GET["username"];
-        // $password = $_GET["password"];
-        $password = password_hash($_GET["password"], PASSWORD_DEFAULT);
+        $password = $_GET["password"];
+        // $password = password_hash($_GET["password"], PASSWORD_DEFAULT);
 
         // Get the password and id of the item that matches this username
         $sql = "SELECT unique_id, pass FROM Accounts WHERE username='$username';";
