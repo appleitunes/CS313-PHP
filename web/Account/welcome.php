@@ -1,14 +1,14 @@
 <?php
-    require "Database/connect.php";
+    // require "Database/connect.php";
 
-    if (session_status() == PHP_SESSION_NONE) {
-        session_start();
-    }
+    // if (session_status() == PHP_SESSION_NONE) {
+    //     session_start();
+    // }
 
-    if (!isset($_SESSION["code"])) {
-        header("Location: login_page.php"); 
-        exit();
-    }
+    // if (!isset($_SESSION["code"])) {
+    //     header("Location: login_page.php"); 
+    //     exit();
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -25,22 +25,24 @@
     </head>
     <body>
         <div class="content">
-            <p id="error_message"></p>
             <button onclick="logout()">Log Out</button>
+            <p id="error_message"></p>
             <br><br>
             <input type="text" id="comment_box" placeholder="Leave Comment">
             <button onclick="comment()">Submit</button>
             <br>
-            <?php
-                $id = $_SESSION["id"];
-                $code = $_SESSION["code"];
+            <div id="comments">
+                <?php
+                    $id = $_SESSION["id"];
+                    $code = $_SESSION["code"];
 
-                // Get all comments the user has made
-                $select_sql = "SELECT comment FROM Comments WHERE account_id=$id AND account_code='$code';";
-                foreach ($db->query($select_sql) as $row) {
-                    echo "<br>" . $row["comment"] . "<br>";
-                }
-            ?>
+                    // Get all comments the user has made
+                    $select_sql = "SELECT comment FROM Comments WHERE account_id=$id AND account_code='$code';";
+                    foreach ($db->query($select_sql) as $row) {
+                        echo "<br>" . $row["comment"] . "<br>";
+                    }
+                ?>
+            </div>
         </div>
     </body>
 </html>

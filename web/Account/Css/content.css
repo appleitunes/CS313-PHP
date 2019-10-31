@@ -25,7 +25,7 @@
     font-size: 1.25em;
 }
 
-.content button {
+button {
     cursor: pointer;
     padding: 0.5em;
     font-size: 1.25em;
@@ -33,14 +33,20 @@
     border: solid 1px gray;
 }
 
-.content button:hover {
+button:hover {
     color: white;
     background-color: darkgray;
 }
 
+#comments {
+    width: 25em;
+    max-width: 90%;
+    overflow-y: scroll;
+}
+
 .comment {
     border: gray solid 1px;
-    width: 25em;
+    width: 100%;
     height: fit-content;
     border-radius: 1em;
     padding: 1em;
