@@ -1,14 +1,14 @@
 <?php
-    // require "Database/connect.php";
+    require "Database/connect.php";
 
-    // if (session_status() == PHP_SESSION_NONE) {
-    //     session_start();
-    // }
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
 
-    // if (!isset($_SESSION["code"])) {
-    //     header("Location: login_page.php"); 
-    //     exit();
-    // }
+    if (!isset($_SESSION["code"])) {
+        header("Location: login_page.php"); 
+        exit();
+    }
 ?>
 
 <!DOCTYPE html>
