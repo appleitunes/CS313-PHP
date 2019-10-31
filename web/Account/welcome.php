@@ -39,7 +39,7 @@
                     // Get all comments the user has made
                     $select_sql = "SELECT comment FROM Comments WHERE account_id=$id AND account_code='$code';";
                     foreach ($db->query($select_sql) as $row) {
-                        echo "<br>" . $row["comment"] . "<br>";
+                        echo "<br><div class='comment'>" . $row["comment"] . "</div><br>";
                     }
                 ?>
             </div>
