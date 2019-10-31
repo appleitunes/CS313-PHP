@@ -21,28 +21,16 @@
         <script src="Javascript/account.js"></script>
 
         <link rel="stylesheet" href="Css/main.css">
-        <link rel="stylesheet" href="Css/content.css">
+        <link rel="stylesheet" href="Css/account.css">
     </head>
     <body>
-        <div class="content">
+        <div class="log_info">
             <button onclick="logout()">Log Out</button>
-            <p id="error_message"></p>
             <br><br>
-            <input type="text" id="comment_box" placeholder="Leave Comment">
-            <button onclick="comment()">Submit</button>
-            <br>
-            <div id="comments">
-                <?php
-                    $id = $_SESSION["id"];
-                    $code = $_SESSION["code"];
-
-                    // Get all comments the user has made
-                    $select_sql = "SELECT comment FROM Comments WHERE account_id=$id AND account_code='$code';";
-                    foreach ($db->query($select_sql) as $row) {
-                        echo "<br><div class='comment'>" . $row["comment"] . "</div><br>";
-                    }
-                ?>
-            </div>
+            <?php
+                $username = $_SESSION["username"];
+                echo "Hello, $username!";
+            ?>
         </div>
     </body>
 </html>
