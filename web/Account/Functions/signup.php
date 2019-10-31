@@ -1,5 +1,6 @@
 <?php
     require "../Database/connect.php";
+    require "misc.php";
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
     }
@@ -31,11 +32,14 @@
             throw new Exception("User already exists.");
         }
 
+        // Create random code. The user must have this to access data.
+        $code = generateRandomString();
+
         // Attempt to add new user
-        $insert_sql = "INSERT INTO Accounts (username, pass) VALUES ('$username', '$hashed_password');";
+        $insert_sql = "INSERT INTO Accounts (username, pass, code) VALUES ('$username', '$hashed_password', '$code');";
         if ($db->query($insert_sql) == TRUE) {
-            $_SESSION["id"] = $db->lastInsertId();
             $_SESSION["username"] = $username;
+            $_SESSION["code"] = $code;
             echo "0";
         }
         else {

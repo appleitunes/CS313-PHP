@@ -3,7 +3,7 @@
         session_start();
     }
 
-    if ($_SESSION["id"] != null) {
+    if (isset($_SESSION["code"])) {
         header("Location: welcome.php"); 
         exit();
     }

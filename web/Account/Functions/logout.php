@@ -5,8 +5,8 @@
     }
 
     try {
-        unset($_SESSION["id"]);
         unset($_SESSION["username"]);
+        unset($_SESSION["code"]);
         echo "0";
     }
     catch (Exception $e) {

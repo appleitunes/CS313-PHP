@@ -3,7 +3,7 @@
         session_start();
     }
 
-    if (!isset($_SESSION["id"])) {
+    if (!isset($_SESSION["code"])) {
         header("Location: login_page.php"); 
         exit();
     }

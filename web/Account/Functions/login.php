@@ -9,13 +9,13 @@
         $password = $_GET["password"];
 
         // Get the password and id of the item that matches this username
-        $select_sql = "SELECT unique_id, pass FROM Accounts WHERE username='$username';";
+        $select_sql = "SELECT unique_id, pass, code FROM Accounts WHERE username='$username';";
         foreach ($db->query($select_sql) as $row) {
 
             // If the password in the database matches the inputted password
             if (password_verify($password, $row["pass"])) {
-                $_SESSION["id"] = $row["unique_id"];
                 $_SESSION["username"] = $username;
+                $_SESSION["code"] = $row["code"];
                 echo "0";
             }
         }
