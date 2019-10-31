@@ -48,8 +48,10 @@ function httpCall(url) {
 }
 
 function postVerification(responseText, refresh=true) {
-    if (responseText == "0" && refresh) {
-        window.location.reload();
+    if (responseText == "0") {
+        if (refresh) {
+            window.location.reload();
+        }
     }
     else {
         document.getElementById("error_message").innerHTML = responseText;
