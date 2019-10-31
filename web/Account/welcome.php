@@ -27,11 +27,11 @@
             <textarea id="comment_box" placeholder="Leave Comment"></textarea>
             <button onclick="comment()">Submit</button>
             <?php
-                $username = $_SESSION["username"];
+                $id = $_SESSION["id"];
                 $code = $_SESSION["code"];
 
                 // Get all comments the user has made
-                $select_sql = "SELECT comment FROM Comments WHERE username='$username';";
+                $select_sql = "SELECT comment FROM Comments WHERE account_id='$id' AND code='$code';";
                 foreach ($db->query($select_sql) as $row) {
                     echo $row["comment"] . "<br>";
                 }
