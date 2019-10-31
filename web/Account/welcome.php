@@ -29,7 +29,8 @@
             <br><br>
             <?php
                 $username = $_SESSION["username"];
-                echo "Hello, $username!";
+                echo "<h1>Hello, $username!</h1>";
+                echo "<p>Free Hong Kong</p>";
             ?>
         </div>
     </body>
