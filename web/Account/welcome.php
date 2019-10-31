@@ -23,9 +23,18 @@
     </head>
     <body>
         <div class="content">
+            <p id="error_message"></p>
+            <textarea id="comment_box" placeholder="Leave Comment"></textarea>
+            <button onclick="comment()">Submit</button>
             <?php
                 $username = $_SESSION["username"];
-                echo "<h1>Hello, $username!</h1>";
+                $code = $_SESSION["code"];
+
+                // Get all comments the user has made
+                $select_sql = "SELECT comment FROM Accounts WHERE username='$username' AND code='$code';";
+                foreach ($db->query($select_sql) as $row) {
+                    echo $row["comment"] . "<br>";
+                }
             ?>
             <br>
             <button onclick="logout()">Log Out</button>

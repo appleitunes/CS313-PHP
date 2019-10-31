@@ -27,7 +27,7 @@
         }
 
         // If account with this username already exists
-        $select_sql = "SELECT unique_id FROM Accounts WHERE username='$username';";
+        $select_sql = "SELECT account_id FROM Accounts WHERE username='$username';";
         foreach ($db->query($select_sql) as $row) {
             throw new Exception("User already exists.");
         }
@@ -38,6 +38,7 @@
         // Attempt to add new user
         $insert_sql = "INSERT INTO Accounts (username, pass, code) VALUES ('$username', '$hashed_password', '$code');";
         if ($db->query($insert_sql) == TRUE) {
+            $_SESSION["id"] = $db->insert_id;
             $_SESSION["username"] = $username;
             $_SESSION["code"] = $code;
             echo "0";
