@@ -49,7 +49,7 @@ function httpCall(url) {
 
 function postVerification(responseText) {
     if (responseText == "0") {
-        window.location.reload();
+        // window.location.reload();
     }
     else {
         document.getElementById("error_message").innerHTML = responseText;
