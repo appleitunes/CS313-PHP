@@ -31,7 +31,7 @@
                 $code = $_SESSION["code"];
 
                 // Get all comments the user has made
-                $select_sql = "SELECT comment FROM Accounts WHERE username='$username' AND code='$code';";
+                $select_sql = "SELECT comment FROM Comments WHERE username='$username' AND code='$code';";
                 foreach ($db->query($select_sql) as $row) {
                     echo $row["comment"] . "<br>";
                 }

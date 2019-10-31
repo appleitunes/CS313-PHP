@@ -2,7 +2,7 @@ function comment() {
     let comment = document.getElementById("comment_box").value;
 
     let url = `Functions/comment.php?comment=${comment}`;
-    httpCall(url).then((responseText) => postVerification(responseText));
+    httpCall(url).then((responseText) => postVerification(responseText, false));
 }
 
 function login() {
@@ -47,9 +47,9 @@ function httpCall(url) {
     });
 }
 
-function postVerification(responseText) {
-    if (responseText == "0") {
-        // window.location.reload();
+function postVerification(responseText, refresh=true) {
+    if (responseText == "0" && refresh) {
+        window.location.reload();
     }
     else {
         document.getElementById("error_message").innerHTML = responseText;

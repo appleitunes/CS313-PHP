@@ -12,7 +12,7 @@
         // Attempt to add new comment
         $insert_sql = "INSERT INTO Comments (account_id, account_code, comment) VALUES ('$id', '$code', '$comment');";
         if ($db->query($insert_sql) == TRUE) {
-            echo "Very Nice";
+            echo "0";
         }
         else {
             throw new Exception("Database error.");
