@@ -1,7 +1,7 @@
 function comment() {
     let comment = document.getElementById("comment_box").value;
 
-    let url = `Functions/login.php?comment=${comment}`;
+    let url = `Functions/comment.php?comment=${comment}`;
     httpCall(url).then((responseText) => postVerification(responseText));
 }
 
