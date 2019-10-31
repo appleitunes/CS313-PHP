@@ -1,5 +1,6 @@
 function comment() {
     let comment = document.getElementById("comment_box").value;
+    document.getElementById("comment_box").value = "";
 
     let url = `Functions/comment.php?comment=${comment}`;
     httpCall(url).then((responseText) => postVerification(responseText, false));

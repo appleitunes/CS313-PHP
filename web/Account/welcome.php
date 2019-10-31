@@ -26,22 +26,21 @@
     <body>
         <div class="content">
             <p id="error_message"></p>
-            <textarea id="comment_box" placeholder="Leave Comment"></textarea>
+            <button onclick="logout()">Log Out</button>
+            <br><br>
+            <input type="text" id="comment_box" placeholder="Leave Comment">
             <button onclick="comment()">Submit</button>
+            <br>
             <?php
                 $id = $_SESSION["id"];
                 $code = $_SESSION["code"];
 
-                echo "SELECT comment FROM Comments WHERE account_id=$id AND account_code='$code';<br>";
-
                 // Get all comments the user has made
                 $select_sql = "SELECT comment FROM Comments WHERE account_id=$id AND account_code='$code';";
                 foreach ($db->query($select_sql) as $row) {
-                    echo $row["comment"] . "<br>";
+                    echo "<br>" . $row["comment"] . "<br>";
                 }
             ?>
-            <br>
-            <button onclick="logout()">Log Out</button>
         </div>
     </body>
 </html>

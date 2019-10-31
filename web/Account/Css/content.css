@@ -13,6 +13,18 @@
     overflow: auto;
 }
 
+.content #error_message {
+    color: red;
+    text-align: left;
+}
+
+.content input {
+    width: 25em;
+    height: 2em;
+    border-radius: 0.5em;
+    font-size: 1.25em;
+}
+
 .content button {
     cursor: pointer;
     padding: 0.5em;
@@ -24,4 +36,15 @@
 .content button:hover {
     color: white;
     background-color: darkgray;
+}
+
+.comment {
+    border: gray solid 1px;
+    width: 25em;
+    height: fit-content;
+    border-radius: 1em;
+    padding: 1em;
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: left;
 }
