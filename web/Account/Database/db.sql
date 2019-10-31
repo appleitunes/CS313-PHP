@@ -1,6 +1,6 @@
 -- heroku pg:psql
 
-DROP TABLE IF EXISTS Accounts, Comments;
+DROP TABLE IF EXISTS Accounts;
 
 CREATE TABLE Accounts (
     account_id      SERIAL              NOT NULL        PRIMARY KEY

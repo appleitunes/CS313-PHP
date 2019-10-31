@@ -1,11 +1,3 @@
-function comment() {
-    let comment = document.getElementById("comment_box").value;
-    document.getElementById("comment_box").value = "";
-
-    let url = `Functions/comment.php?comment=${comment}`;
-    httpCall(url).then((responseText) => postVerification(responseText, false));
-}
-
 function login() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
