@@ -25,9 +25,9 @@
         <div class="log_info">
             <h1>Login</h1>
             <p id="error_message"></p>
-            <input id="username" placeholder="Username">
+            <input id="username" placeholder="Username" maxlength="63">
             <br><br>
-            <input type="password" id="password" placeholder="Password">
+            <input type="password" id="password" placeholder="Password" maxlength="63">
             <br><br>
             <button onclick="login()">Log In</button>
             <br><br>
