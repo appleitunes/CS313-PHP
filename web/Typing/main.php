@@ -49,7 +49,7 @@
                 </div>
 
                 <div id="stories">
-                    <h1>Stories</h1>
+                    <h1>Shared Stories</h1>
 
                     <?php
                         $storyID = null;
